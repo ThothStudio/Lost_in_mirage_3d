@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Example : MonoBehaviour
+public class Character_movement : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
