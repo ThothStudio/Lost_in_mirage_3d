@@ -1568,6 +1568,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49774ce67f634846aeff375d38a51f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &627335003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627334995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c37ae4b0d0a4549b023afbdb71bbe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &631551377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4440810316734408, guid: bfc2a43bc280a494dbd8a2a82e95a634,
@@ -3565,7 +3577,7 @@ Transform:
   - {fileID: 607406314}
   - {fileID: 1306966010}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1494045637 stripped
 Transform:
@@ -5097,6 +5109,11 @@ PrefabInstance:
       propertyPath: movementMask.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 4099259654948654313, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9c2ad14152332f44883ae62835ac3ff5, type: 2}
     - target: {fileID: 4099259654948654314, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_Height
@@ -5160,7 +5177,7 @@ PrefabInstance:
     - target: {fileID: 4099259654948654317, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4099259654948654317, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
