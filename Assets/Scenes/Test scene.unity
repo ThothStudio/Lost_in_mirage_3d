@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 607406313}
-  m_IndirectSpecularColor: {r: 0.1832928, g: 0.22892565, b: 0.30629724, a: 1}
+  m_IndirectSpecularColor: {r: 0.18329301, g: 0.22892618, b: 0.30629778, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4420,7 +4420,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728564186}
   m_LocalRotation: {x: 0.02077415, y: 0.97018987, z: -0.22407508, w: 0.08994696}
-  m_LocalPosition: {x: -10.1, y: -0, z: 17.93}
+  m_LocalPosition: {x: -10.1, y: -1.86, z: 17.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5099,6 +5099,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33ade288c5b49eb45804aef5fe965e32, type: 2}
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 33ade288c5b49eb45804aef5fe965e32, type: 2}
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.00012608618
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.00031271367
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.005513209
+      objectReference: {fileID: 0}
+    - target: {fileID: 4099259653028982099, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_UpdateWhenOffscreen
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4099259654948654311, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_Name
@@ -5132,7 +5167,7 @@ PrefabInstance:
     - target: {fileID: 4099259654948654316, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_BaseOffset
-      value: 1.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4099259654948654316, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
