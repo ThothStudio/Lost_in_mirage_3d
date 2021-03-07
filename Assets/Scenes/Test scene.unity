@@ -5149,6 +5149,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 9c2ad14152332f44883ae62835ac3ff5, type: 2}
+    - target: {fileID: 4099259654948654313, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
+        type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: df44d83236621514d9e35a8f21ea4064, type: 3}
     - target: {fileID: 4099259654948654314, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_Height
@@ -5167,7 +5172,7 @@ PrefabInstance:
     - target: {fileID: 4099259654948654316, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_BaseOffset
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4099259654948654316, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
