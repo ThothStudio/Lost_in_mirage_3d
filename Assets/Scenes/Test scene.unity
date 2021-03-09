@@ -4348,7 +4348,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 9000000, guid: df44d83236621514d9e35a8f21ea4064, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 116119195625837000, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_ApplyRootMotion
@@ -4362,7 +4362,7 @@ PrefabInstance:
     - target: {fileID: 116119195625837002, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
       propertyPath: m_Height
-      value: 2.0392537
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 116119195625837002, guid: ac7f2620d1d3a754ca31eaa2c0e1d8ab,
         type: 3}
