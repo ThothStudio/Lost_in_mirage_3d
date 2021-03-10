@@ -7,8 +7,8 @@ public class CharacterAnimator : MonoBehaviour
 {
     const float locomotionAnimationSmoothTime = .1f;
 
-    NavMeshAgent agent;
-    Animator animator;
+    private NavMeshAgent agent;
+    private Animator animator;
 
     void Start()
     {
