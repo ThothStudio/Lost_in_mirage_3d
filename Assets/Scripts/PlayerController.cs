@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
+    public Interactable focus;
+    public LayerMask movementMask;
+
     private Camera cam;
     private PlayerMotor motor;
-    
-    public LayerMask movementMask;
 
     void Start()
     {
@@ -32,19 +34,46 @@ public class PlayerController : MonoBehaviour
                 motor.MoveToPoint(hit.point);
 
                 // Stop focusing any object.
+                RemoveFocus();
             }
         }
 
         // Action
         if (Input.GetMouseButton(1))
         {
+            // Creating of a ray
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+            // If the ray hits
             if (Physics.Raycast(ray, out hit, 100))
             {
-                // Chcek if we hit an interactable.
-                // If we did set it as our focus.
+                Interactable interactable = hit.collider.GetComponent<Interactable>();
+                if(interactable != null)
+                {
+                    SetFocus(interactable);
+                }
             }
         }
+    }
+
+    private void SetFocus(Interactable newFocus)
+    {
+        if(newFocus != focus)
+        {
+            if (focus != null)
+                focus.OnDefocused();
+
+            focus = newFocus;
+            motor.FollowTarget(newFocus);
+        }
+        newFocus.OnFocused(transform);
+    }
+
+    private void RemoveFocus()
+    {
+        if (focus != null)
+            focus.OnDefocused();
+        focus = null;
+        motor.StopFollowTarget();
     }
 }
